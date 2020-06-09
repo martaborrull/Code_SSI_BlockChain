@@ -16,12 +16,12 @@ Our code has **4 contracts**:
 - **mySSI**: it creates a register of identities
   - Inside this contract we have a struct of person which consist in two parts:
     - a DNI (that acts like a public key).
-    - a private key that anyone know.
+    - a private key that nobody knows.
   - List of people, which receives as input the address and returns as output the person struct.
   - Two hashes will be carried out:
       - privateHash: it will be the result of concatenating DNI and private key and using
-        a SHA256 encryptation.
-      - publicHash: SHA256 encryptation of DNI.
+        a SHA256 encryption.
+      - publicHash: SHA256 encryption of DNI.
   - All private keys are stored in a list, which cannot be accessed by anyone.
   - A -modifier- for a function to be accessible just by the owner.
   - The function -getHashToAddress- returns the address of the person who has the corresponding privateHash.
