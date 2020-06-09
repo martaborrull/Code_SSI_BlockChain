@@ -9,9 +9,11 @@ We are Group 8:
 The aim of our code is to valid the identity of a person that it is registered in the Blockchain. 
 This means that any person can validate the identity just by using a DNI and in this way there 
 will not be needed any other type of personal information.
+Moreover, we just made an example of how our code can be use when we want to check if a person is valid or not. 
+So when a person want to rent a car, this one will show its DNI(public key) and the system will say if the person can proceed to rent a car or not. 
 
-Our code has 4 contracts:
-- mySSI: it creates a register of identities
+Our code has **4 contracts**:
+- **mySSI**: it creates a register of identities
   - Inside this contract we have a struct of person which consist in two hashes:
     - a DNI (that acts like a public key).
     - a private key that anyone know.
@@ -23,12 +25,13 @@ Our code has 4 contracts:
   - There is the function getPersonInfo where only returns the DNI which, as we said above, is the only public information.
   - Finally, the function isValid. This validates the identity by checking the address of the corresponding DNI.
   
-- ERC20Token: it acts as our ERC20 Token
+- **ERC20Token**: it acts as our ERC20 Token
   -It just containg the balances corresponding to an address.
   
-- MyToken is ERC20Token: this contract inherits everything within ERC20Token
+- **MyToken is ERC20Token**: this contract inherits everything within ERC20Token
            
-- myContract: this contract allows the owner to buy tokens, 
-          and with these tokens to pay for an "imaginary" car rentCar
-          The client will be allowed to rent the car only if it has 
-          a valid identity in the register
+- **myContract**: This contract allows the owner to buy tokens, and with these tokens to pay for an "imaginary" car rentCar. The client will be allowed to rent the car only if it has a valid identity in the register.
+The functions that are part from this contract are:
+  - buyToken: Where ones the identity is valid, the person will be able to buy token.
+  - payRent: Where it just take 5 tokens, which are the value to pay.
+  - rentCar: that validates the identity and call the other functions only if it is valid.
