@@ -1,5 +1,5 @@
 # Code_SSI_BlockChain
-We are Group 8:
+Group 8 Members:
 - Virginia Mariné NIA 206107
 - Esther Flores NIA 205328
 - Candela García NIA 207529
