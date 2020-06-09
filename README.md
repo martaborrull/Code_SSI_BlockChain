@@ -10,7 +10,7 @@ The aim of our implementation is to validate the identity of a person that it is
 This means that any person can validate the identity just by using a DNI and in this way there 
 will not be needed any other type of personal information.
 Moreover, we just made an example of how our code can be use when we want to check if a person is valid or not. 
-So when a client wants to rent a car, this one will show his DNI(public key) and the system will say if the person can proceed to rent a car or not. 
+So when a client wants to rent a car, this one will show his DNI (public key) and the system will say if the person can proceed to rent a car or not. 
 
 Our code has **4 contracts**:
 - **mySSI**: it creates a register of identities
